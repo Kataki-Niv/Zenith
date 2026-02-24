@@ -88,20 +88,6 @@ Zenith addresses these challenges by delivering **explainable feasibility scorin
 
 ---
 
-##  Project Structure (Simplified)
-
-project-zenith/
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   └── api/
-├── backend/        # FastAPI (planned)
-├── docs/
-└── README.md
-
----
-
 ##  Project Status
 
 - ✅ Solar Feasibility & Savings Analysis implemented
@@ -113,7 +99,7 @@ project-zenith/
 ##  Author
 
 **Nivedana Kataki**  
-Computer Science / AI Student  
+Computer Science
 
 Interests:
 - Full-stack system design

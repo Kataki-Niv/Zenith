@@ -28,17 +28,17 @@ Zenith addresses these challenges by delivering **explainable feasibility scorin
 - Investment feasibility scoring based on consumption and offset potential
 - Natural-language explanation of results and recommendations
 
-### 🔹 Future Solar Potential Analysis (Planned)
+### 🔹 Future Solar Potential Analysis 
 - Long-term financial benefit projection
 - Multi-year cost vs savings comparison
 - Scenario-based analysis for changing consumption patterns
 
-### 🔹 Government Subsidy Insights (Planned)
+### 🔹 Government Subsidy Insights 
 - Policy-aware subsidy information
 - Eligibility-based guidance for users
 - Integration of incentive impact on ROI calculations
 
-### 🔹 Rooftop Suitability Analysis (Planned)
+### 🔹 Rooftop Suitability Analysis 
 - Location-aware feasibility assessment
 - Roof readiness and suitability scoring
 - Enhanced decision support for installation planning

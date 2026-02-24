@@ -1,4 +1,4 @@
-# 🌞 Zenith — AI-Powered Solar Feasibility & Analytics Platform
+# Zenith — AI-Powered Solar Feasibility & Analytics Platform
 
 Zenith is a full-stack web application designed to evaluate the **technical feasibility, economic viability, and long-term benefits of rooftop solar installations** for residential users.
 
@@ -7,7 +7,7 @@ AI is used strictly as a decision-support layer, while all feasibility and savin
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Many potential solar adopters struggle with:
 - Unclear feasibility assessment
@@ -19,7 +19,7 @@ Zenith addresses these challenges by delivering **explainable feasibility scorin
 
 ---
 
-## 🚀 Core Capabilities
+##  Core Capabilities
 
 ### 🔹 Solar Feasibility & Savings Analysis
 - Manual electricity usage input
@@ -45,7 +45,7 @@ Zenith addresses these challenges by delivering **explainable feasibility scorin
 
 ---
 
-## 🧠 System Design Philosophy
+##  System Design Philosophy
 
 - **Explainability first** — every score and recommendation is interpretable
 - **Deterministic core logic** — real calculations, no mock data
@@ -88,7 +88,7 @@ Zenith addresses these challenges by delivering **explainable feasibility scorin
 
 ---
 
-## 📁 Project Structure (Simplified)
+##  Project Structure (Simplified)
 
 project-zenith/
 ├── frontend/
@@ -102,7 +102,7 @@ project-zenith/
 
 ---
 
-## 📌 Project Status
+##  Project Status
 
 - ✅ Solar Feasibility & Savings Analysis implemented
 - 🚧 Advanced analysis modules under development
@@ -110,7 +110,7 @@ project-zenith/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Nivedana Kataki**  
 Computer Science / AI Student  

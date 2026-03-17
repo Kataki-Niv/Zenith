@@ -87,7 +87,7 @@ These insights help users understand how policy incentives affect the economic v
 
 ---
 
-## AI Rooftop Analysis and Visualization
+## AI Rooftop Analysis and Visualization (Beta)
 
 The final layer of Zenith evaluates the **physical feasibility of rooftop solar installation**.
 

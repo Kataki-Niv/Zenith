@@ -16,8 +16,10 @@ export default function DashboardLayout({
           </div>
 
           {/* SCROLLABLE MAIN CONTENT */}
-          <main className="ml-64 flex-1 p-8 overflow-y-auto">
-            {children}
+          <main className="ml-64 flex-1 overflow-y-auto p-8 lg:p-10">
+            <div className="mx-auto w-full max-w-[84rem]">
+              {children}
+            </div>
           </main>
         </div>
       </div>

@@ -83,7 +83,7 @@ export default function Navbar() {
            : "bg-transparent border-transparent py-6"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-[84rem] mx-auto px-16 lg:px-20 flex items-center justify-between">
         {/* Brand */}
         <div
           className="flex items-center gap-3 cursor-pointer group"

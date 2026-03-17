@@ -170,7 +170,7 @@ function HeroSection({
   return (
 <section
   id="get-started"
-  className="w-full max-w-7xl mx-auto px-6 pt-40 pb-16 flex flex-col lg:flex-row items-center gap-16 min-h-[90vh] scroll-mt-32"
+  className="w-full max-w-[84rem] mx-auto px-16 lg:px-20 pt-34 pb-12 flex flex-col lg:flex-row items-center gap-12 min-h-[84vh] scroll-mt-32"
 >
 
       {/* TEXT */}
@@ -179,7 +179,7 @@ function HeroSection({
         initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex-1 text-center lg:text-left z-10"
       >
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold mb-8 backdrop-blur-sm">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold mb-6 backdrop-blur-sm">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -187,28 +187,28 @@ function HeroSection({
           PM Surya Ghar Subsidy Supported
         </div>
 
-        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-extrabold leading-[1.05] mb-6 tracking-tighter">
+        <h1 className="text-5xl sm:text-6xl lg:text-[5.5rem] font-extrabold leading-[1.02] mb-5 tracking-tighter">
           Solar ROI, <br className="hidden lg:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500">
             Demystified.
           </span>
         </h1>
 
-        <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+        <p className="text-[1.15rem] text-gray-400 mb-7 max-w-[42rem] mx-auto lg:mx-0 leading-relaxed font-light">
           A deterministic feasibility engine built for the Indian grid. Structured financial modelling with MNRE-aligned subsidy logic — fast, transparent, actionable.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
           <button
             onClick={() => navigateProtected("/engine")}
-            className="bg-emerald-500 text-black hover:bg-emerald-400 px-6 py-4 rounded-full font-bold hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(255,255,255,0.06)] flex items-center gap-3"
+            className="bg-emerald-500 text-black hover:bg-emerald-400 px-6 py-3.5 rounded-full font-bold hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(255,255,255,0.06)] flex items-center gap-3"
           >
             Explore Solar Intelligence <Zap size={18} />
           </button>
 
           <button
             onClick={() => router.push("/demo")}
-            className="w-full sm:w-auto bg-white/5 border border-white/10 px-6 py-4 rounded-full font-semibold hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+            className="w-full sm:w-auto bg-white/5 border border-white/10 px-6 py-3.5 rounded-full font-semibold hover:bg-white/10 transition-all flex items-center justify-center gap-2"
           >
             <Play size={18} className="fill-white" /> Watch Demo
           </button>
@@ -220,8 +220,8 @@ function HeroSection({
 
 function ProblemSolutionSection() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-32 scroll-mt-12" id="how-it-works">
-      <div className="text-center mb-20">
+    <section className="w-full max-w-[84rem] mx-auto px-16 lg:px-20 py-24 scroll-mt-12" id="how-it-works">
+      <div className="text-center mb-18">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Stop guessing your ROI.</h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">Zenith brings deterministic intelligence to your roof — quick, accurate feasibility and subsidy insights without the sales call.</p>
       </div>
@@ -266,11 +266,11 @@ function SolarIntelligenceSection({
   return (
     <section 
   id="intelligence"
-  className="w-full bg-[#020202] text-white px-6 md:px-12 py-20"
+  className="w-full bg-[#020202] text-white px-16 lg:px-20 py-16 scroll-mt-28"
 >
 
-      <div className="text-center max-w-4xl mx-auto mb-24">
-        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-6">
+      <div className="text-center max-w-4xl mx-auto mb-18">
+        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-6">
           Intelligent Solar Decision Layers
         </h2>
         <p className="text-zinc-400 text-lg md:text-xl">
@@ -279,11 +279,11 @@ function SolarIntelligenceSection({
         </p>
       </div>
 
-      <div className="space-y-32 max-w-[1400px] mx-auto">
+      <div className="space-y-24 max-w-[84rem] mx-auto">
 
         {/* 1 — FS SCORE */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[420px] rounded-3xl overflow-hidden border border-white/10">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative h-[380px] md:h-[420px] rounded-3xl overflow-hidden border border-white/10">
             <img
               src="/images/service1.jpg"
               className="absolute inset-0 w-full h-full object-cover opacity-100"
@@ -314,7 +314,7 @@ function SolarIntelligenceSection({
         </div>
 
         {/* 2 — FORECAST */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 md:order-1">
             <h3 className="text-3xl md:text-4xl font-black mb-6 uppercase">
               The 20-Year Vision
@@ -334,7 +334,7 @@ function SolarIntelligenceSection({
             </button>
           </div>
 
-          <div className="relative h-[420px] rounded-3xl overflow-hidden border border-white/10 order-1 md:order-2">
+          <div className="relative h-[380px] md:h-[420px] rounded-3xl overflow-hidden border border-white/10 order-1 md:order-2">
             <img
               src="/images/service2.jpg"
               className="absolute inset-0 w-full h-full object-cover opacity-100"
@@ -344,8 +344,8 @@ function SolarIntelligenceSection({
         </div>
 
         {/* 3 — SUBSIDY */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[420px] rounded-3xl overflow-hidden border border-white/10">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative h-[380px] md:h-[420px] rounded-3xl overflow-hidden border border-white/10">
             <img
               src="/images/service3.jpg"
               className="absolute inset-0 w-full h-full object-cover opacity-100"
@@ -377,7 +377,7 @@ function SolarIntelligenceSection({
         </div>
 
         {/* 4 — ROOFTOP */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 md:order-1">
             <h3 className="text-3xl md:text-4xl font-black mb-6 uppercase">
               The Photon Hunter
@@ -401,7 +401,7 @@ function SolarIntelligenceSection({
             </button>
           </div>
 
-          <div className="relative h-[420px] rounded-3xl overflow-hidden border border-white/10 order-1 md:order-2">
+          <div className="relative h-[380px] md:h-[420px] rounded-3xl overflow-hidden border border-white/10 order-1 md:order-2">
             <img
               src="/images/service4.jpg"
               className="absolute inset-0 w-full h-full object-cover opacity-100"
@@ -420,13 +420,13 @@ function SolarIntelligenceSection({
 
 function BentoFeaturesSection() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-20" id="features">
+    <section className="w-full max-w-[84rem] mx-auto px-16 lg:px-20 py-16" id="features">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {BENTO_FEATURES.map((feat, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.5, delay: feat.delay }}
-            className={`${feat.colSpan} bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all rounded-3xl p-8 group relative overflow-hidden`}
+            className={`${feat.colSpan} bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all rounded-3xl p-7 group relative overflow-hidden`}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="mb-6 inline-block p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:scale-110 transition-transform duration-300">
@@ -443,10 +443,10 @@ function BentoFeaturesSection() {
 
 function InteractivePreviewSection() {
   return (
-    <section className="w-full  py-20">
+    <section className="w-full py-16 px-16 lg:px-20">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-        className="w-full rounded-[3rem] bg-gradient-to-b from-[#0a0a0a] to-[#050505] border border-white/10 p-4 md:p-8 shadow-[0_0_100px_rgba(52,211,105,0.05)]"
+        className="w-full max-w-[84rem] mx-auto rounded-[3rem] bg-gradient-to-b from-[#0a0a0a] to-[#050505] border border-white/10 p-4 md:p-7 shadow-[0_0_100px_rgba(52,211,105,0.05)]"
       >
         <div className="text-center mb-12 pt-8">
           <div className="inline-block mb-4 px-4 py-1 text-xs font-semibold bg-white/5 border border-white/10 rounded-full text-gray-400">
@@ -473,9 +473,9 @@ function InteractivePreviewSection() {
                   { l: "Gross Cost", v: "₹2.7L", i: <IndianRupee size={16} className="text-gray-400" /> },
                   { l: "Net Cost", v: "₹1.92L", i: <Shield size={16} className="text-emerald-400" /> },
                 ].map((stat, i) => (
-                  <div key={i} className="bg-white/5 border border-white/5 p-4 rounded-xl">
+                    <div key={i} className="bg-white/5 border border-white/5 p-4 rounded-xl">
                     <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">{stat.i} {stat.l}</div>
-                    <div className="text-xl font-bold text-white">{stat.v}</div>
+                      <div className="text-xl font-bold text-white">{stat.v}</div>
                   </div>
                 ))}
               </div>
@@ -509,9 +509,9 @@ function InteractivePreviewSection() {
 
 function TestimonialsSection() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-24" id="testimonials">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">Trusted by India's Transition</h2>
+    <section className="w-full max-w-[84rem] mx-auto px-16 lg:px-20 py-20" id="testimonials">
+      <div className="text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by India's Transition</h2>
         <p className="text-gray-400">From homeowners to top-tier EPCs.</p>
       </div>
 
@@ -541,9 +541,9 @@ function PricingSection({
   navigateProtected: (path: string) => void;
 }) {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-24" id="pricing">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">Built for Real Solar Decisions.</h2>
+    <section className="w-full max-w-[84rem] mx-auto px-16 lg:px-20 py-20" id="pricing">
+      <div className="text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Built for Real Solar Decisions.</h2>
         <p className="text-gray-400">
           Whether you're installing on your own roof or closing rooftop deals.
         </p>
@@ -662,8 +662,8 @@ function FAQSection() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
 
   return (
-    <section className="w-full max-w-3xl mx-auto px-6 py-24" id="faq">
-      <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+    <section className="w-full max-w-4xl mx-auto px-16 lg:px-20 py-20" id="faq">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {FAQS.map((faq, i) => (
           <div key={i} className="border border-white/10 bg-white/[0.02] rounded-2xl overflow-hidden transition-all hover:border-white/20">
@@ -728,8 +728,8 @@ function BottomCTA({
 
 function Footer() {
   return (
-    <footer className="w-full border-t border-white/10 bg-[#020202] pt-20 pb-10 px-6 relative z-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 mb-16">
+    <footer className="w-full border-t border-white/10 bg-[#020202] pt-16 pb-10 px-16 lg:px-20 relative z-10">
+      <div className="max-w-[84rem] mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 mb-14">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-6">
             <Sun size={24} className="text-emerald-400" />
@@ -774,7 +774,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 font-medium">
+      <div className="max-w-[84rem] mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 font-medium">
         <p>© {new Date().getFullYear()} Zenith Technologies. All rights reserved.</p>
         <div className="flex items-center gap-2 mt-4 md:mt-0">
           <MapPin size={14} /> Built in Bhubaneswar, India.

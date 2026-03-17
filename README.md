@@ -1,6 +1,6 @@
 # Zenith
 
-## Live Demo
+### Live Demo
 Deployment coming soon
 
 **Zenith** is a full-stack decision intelligence platform designed to evaluate the **technical, financial, and policy feasibility of rooftop solar adoption**. The platform integrates financial modeling, government policy analysis, and AI-assisted rooftop assessment into a unified analytical workflow that helps households and organizations determine whether solar installation is economically viable and environmentally beneficial.

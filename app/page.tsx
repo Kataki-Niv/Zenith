@@ -203,7 +203,7 @@ function HeroSection({
             onClick={() => navigateProtected("/engine")}
             className="bg-emerald-500 text-black hover:bg-emerald-400 px-6 py-3.5 rounded-full font-bold hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(255,255,255,0.06)] flex items-center gap-3"
           >
-            Explore Solar Intelligence <Zap size={18} />
+            How Zenith Works? <Zap size={18} />
           </button>
 
           <button

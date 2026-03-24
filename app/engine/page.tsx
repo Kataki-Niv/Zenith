@@ -73,8 +73,12 @@ const MODULES: ModuleConfig[] = [
     colorHex: 0xff6e00,
     emissiveHex: 0xff3300,
     cardIcon: "layers",
-    cardDesc:
-      "Scores solar feasibility across rooftop size, irradiance, electricity cost, ROI, and payback period.",
+    cardDesc: `1. The user uploads their electricity bill or enters monthly usage details.
+2. Zenith analyzes consumption patterns using AI-assisted parsing.
+3. The system calculates the optimal solar system size and required panels.
+4. It estimates installation cost, annual savings, and return on investment.
+5. A final feasibility score is generated to indicate viability.
+6. Gemini provides a clear explanation and recommendation on whether installing solar is financially beneficial.`,
   },
   {
     id: 1,
@@ -87,8 +91,12 @@ const MODULES: ModuleConfig[] = [
     colorHex: 0x00d4aa,
     emissiveHex: 0x009977,
     cardIcon: "chart",
-    cardDesc:
-      "Projects 10-20 year savings, carbon offsets, and ROI with adjustable inflation modeling.",
+    cardDesc: `1. The system takes outputs from the feasibility engine as input.
+2. It models long-term performance over a 20-25 year period.
+3. Real-world factors like tariff growth and panel degradation are applied.
+4. Financial metrics such as NPV and IRR are calculated.
+5. The user receives a projection of long-term returns and profitability.
+6. Gemini provides insights on whether the investment is strong and sustainable over time.`,
   },
   {
     id: 2,
@@ -101,8 +109,12 @@ const MODULES: ModuleConfig[] = [
     colorHex: 0x3b8fff,
     emissiveHex: 0x0044cc,
     cardIcon: "document",
-    cardDesc:
-      "Detects PM Surya Ghar eligibility, calculates subsidy slabs, and guides documentation.",
+    cardDesc: `1. The system checks eligibility for government schemes like PM Surya Ghar.
+2. It calculates applicable central and state subsidies.
+3. The installation cost is adjusted based on incentives.
+4. The payback period is recalculated with subsidy benefits included.
+5. The user is shown the true cost after subsidies are applied.
+6. Gemini explains how subsidies improve affordability and impact overall returns.`,
   },
   {
     id: 3,
@@ -115,8 +127,12 @@ const MODULES: ModuleConfig[] = [
     colorHex: 0xa855f7,
     emissiveHex: 0x7020cc,
     cardIcon: "roof",
-    cardDesc:
-      "Roof orientation, shadow detection, load capacity checks, and AI-optimized panel layout.",
+    cardDesc: `1. The user uploads a rooftop image or video.
+2. The system analyzes the rooftop using computer vision techniques.
+3. It detects usable area and identifies obstructions.
+4. Solar panel placement is simulated based on orientation and sunlight.
+5. The system estimates energy generation potential for the rooftop.
+6. Gemini provides a summary of rooftop suitability and installation feasibility.`,
   },
 ];
 
@@ -212,6 +228,7 @@ function Tooltip({ module }: TooltipProps) {
           alignItems: "center",
           gap: "8px",
           fontSize: "10px",
+          whiteSpace: "pre-line",
           textTransform: "uppercase",
           letterSpacing: "2px",
           color: "rgba(255,255,255,0.4)",
@@ -885,6 +902,7 @@ function InfoCards({ hoveredId }: InfoCardsProps) {
                   fontSize: "12px",
                   color: "rgba(255,255,255,0.6)",
                   lineHeight: 1.7,
+                  whiteSpace: "pre-line",
                 }}
               >
                 {mod.cardDesc}
@@ -950,10 +968,7 @@ export default function SolarDecisionOverview() {
             marginBottom: "20px",
           }}
         >
-          INTELLIGENT{" "}
-          <span style={{ color: "#ff6e00" }}>SOLAR</span>
-          <br />
-          DECISION LAYERS
+          How Zenith Works?
         </h1>
         <p
           style={{

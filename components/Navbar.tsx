@@ -86,7 +86,7 @@ export default function Navbar() {
       <div className="max-w-[84rem] mx-auto px-16 lg:px-20 flex items-center justify-between">
         {/* Brand */}
         <div
-          className="flex items-center gap-3 cursor-pointer group"
+          className="flex items-center gap-3 cursor-pointer group -ml-2"
           onClick={() => {
             router.push("/");
             window.scrollTo({ top: 0, behavior: "smooth" });

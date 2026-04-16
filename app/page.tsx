@@ -410,6 +410,37 @@ function SolarIntelligenceSection({
           </div>
         </div>
 
+        {/* 5 - GRID GUARDIAN */}
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative h-[380px] md:h-[420px] rounded-3xl overflow-hidden border border-white/10">
+            <img
+              src="/images/service5.jpg"
+              className="absolute inset-0 w-full h-full object-cover opacity-100"
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
+
+          <div>
+            <h3 className="text-3xl md:text-4xl font-black mb-6 uppercase">
+              The Grid Guardian
+            </h3>
+
+            <p className="text-zinc-400 text-lg leading-relaxed mb-8">
+              The Guardian Grid transforms individual solar setups into a synchronized powerhouse of community resilience.
+              By applying advanced linear programming, the system analyzes real-time energy production across multiple units to determine the most efficient way to share surplus power.
+              It doesn't just track data; it orchestrates a peer-to-peer energy exchange that prioritizes stability and cost-effectiveness for every participant.
+              Acting as an invisible conductor, The Guardian Grid ensures that no watt goes to waste, automatically rebalancing the flow to protect the community from outages while maximizing the collective return on every photon captured.
+            </p>
+
+            <button
+              onClick={() => navigateProtected("/service5")}
+              className="px-8 py-4 bg-emerald-500 text-black font-bold uppercase tracking-widest rounded-xl hover:bg-emerald-400 hover:text-black transition-all duration-200"
+            >
+              Optimize Grid
+            </button>
+          </div>
+        </div>
+
       </div>
     </section>
   )

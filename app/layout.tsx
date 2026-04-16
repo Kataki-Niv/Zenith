@@ -7,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="text-[95.5%]">
-      <body className="min-h-screen">
+    <html lang="en" className="text-[95.5%]" suppressHydrationWarning>
+      <body className="min-h-screen" suppressHydrationWarning>
         <Navbar />
         {children}
       </body>

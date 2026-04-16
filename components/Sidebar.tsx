@@ -7,6 +7,7 @@ import {
   BarChart3,
   Landmark,
   Home,
+  Zap,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -104,6 +105,23 @@ export default function Sidebar() {
 
           <Home size={18} />
           <span>The Photon Hunter</span>
+        </Link>
+
+
+        {/* Service 5 */}
+        <Link
+          href="/service5"
+          className={`${baseClasses} ${
+            isActive("/service5") ? activeClasses : inactiveClasses
+          }`}
+          aria-current={isActive("/service5") ? "page" : undefined}
+        >
+          {isActive("/service5") && (
+            <span className="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-1 bg-cyan-400 rounded-full" />
+          )}
+
+          <Zap size={18} />
+          <span>The Grid Guardian</span>
         </Link>
 
       </nav>

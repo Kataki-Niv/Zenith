@@ -3,7 +3,7 @@
 ### Live Demo
 https://zenith-64k24v6u3-kataki-nivs-projects.vercel.app/
 
-**Zenith** is a full-stack decision intelligence platform designed to evaluate the **technical, financial, and policy feasibility of rooftop solar adoption**. The platform integrates financial modeling, government policy analysis, and AI-assisted rooftop assessment into a unified analytical workflow that helps households and organizations determine whether solar installation is economically viable and environmentally beneficial.
+**Zenith** is a full-stack **energy decision and optimization intelligence platform** designed to evaluate the **technical, financial, and policy feasibility of rooftop solar adoption**. The platform integrates financial modeling, government policy analysis, and AI-assisted rooftop assessment into a unified analytical workflow that helps households and organizations determine whether solar installation is economically viable and environmentally beneficial.
 
 The system combines real-world parameters such as electricity tariffs, solar irradiance, panel efficiency, government subsidy structures, and long-term energy price trends to provide data-driven insights into renewable energy adoption. By bringing these variables together within a single platform, Zenith transforms complex energy, engineering, and financial information into **accessible decision-support intelligence for solar adoption**.
 
@@ -24,7 +24,80 @@ Zenith addresses this challenge by providing a **multi-layered analytical platfo
 
 By combining engineering analysis, financial modeling, policy intelligence, and AI-assisted visualization, Zenith enables users to make **informed and data-driven renewable energy decisions**.
 
+Zenith further extends this analysis beyond individual households by enabling **community-level energy optimization through its Lumen Logic engine**, bridging the gap between solar adoption and intelligent energy utilization.
+
 ---
+
+# Neighborhood Energy Intelligence (Lumen Logic)
+
+Zenith extends beyond individual solar feasibility by introducing **Lumen Logic**, a real-time microgrid intelligence engine that enables energy optimization across multiple homes.
+
+While traditional solar systems operate in isolation, Lumen Logic connects households into a **collaborative microgrid**, allowing energy to be dynamically shared, routed, and optimized in real time.
+
+## Problem
+
+Conventional rooftop solar systems suffer from structural inefficiencies:
+
+- Excess solar energy is sold to the grid at low prices
+- Neighboring homes simultaneously purchase expensive electricity
+- Systems cannot adapt to real-time demand or weather variations
+
+This results in significant energy waste and suboptimal utilization of renewable resources.
+
+## Solution
+
+Lumen Logic introduces a **decentralized optimization layer** that:
+
+- Connects multiple homes into a shared energy network
+- Enables peer-to-peer (P2P) energy trading
+- Dynamically routes energy based on demand and availability
+- Minimizes reliance on the central grid
+
+## Core Optimization Engine
+
+At the heart of Lumen Logic is a **Linear Programming-based optimizer** that determines the most efficient energy distribution strategy across homes.
+
+The system minimizes total energy cost by balancing:
+
+- Grid energy consumption
+- Peer-to-peer energy exchange
+
+Subject to constraints such as:
+
+- Energy balance across all homes
+- Solar generation availability
+- Demand satisfaction
+- Battery-supported supply (where applicable)
+
+## System Model
+
+The current implementation simulates a **three-node microgrid**:
+
+- House A: Solar producer (surplus generation)
+- House B: Storage-enabled node (battery-supported)
+- House C: High-demand consumer
+
+The optimizer determines how energy should flow between these nodes to achieve minimum cost and maximum efficiency.
+
+## Impact Metrics
+
+Lumen Logic evaluates system performance using:
+
+- Total energy cost reduction
+- Savings compared to baseline (grid-only system)
+- Efficiency gain percentage
+- Reduction in grid dependency
+
+## Integration with Zenith
+
+Zenith evaluates **whether a home should adopt solar**.
+
+Lumen Logic determines **how energy should be distributed after adoption**.
+
+Together, they form a **complete energy intelligence pipeline**, spanning:
+
+- Individual decision-making
+- Community-level optimization
 
 # Key Features
 
@@ -124,9 +197,8 @@ These projections highlight the broader sustainability benefits of rooftop solar
 
 # System Architecture
 
-Zenith operates as a modular analytical platform in which multiple components evaluate different aspects of solar adoption. These modules interact to produce a unified feasibility analysis.
+Zenith operates as a modular analytical platform in which multiple components evaluate different aspects of solar adoption. These modules interact to produce a unified feasibility analysis, which is further extended into community-level optimization through the Lumen Logic engine.
 
-```
                 ┌────────────────────┐
                 │  User Inputs       │
                 │  (Bill / Rooftop)  │
@@ -144,7 +216,12 @@ Engine              Simulator          Analysis
                    │
                    ▼
          Unified Solar Decision Insights
-```
+                   │
+                   ▼
+      Lumen Logic Optimization Engine
+                   │
+                   ▼
+     Community Energy Intelligence
 
 This architecture allows Zenith to combine **financial modeling, engineering estimation, and policy intelligence** within a single decision-support workflow.
 
@@ -186,6 +263,7 @@ This architecture allows Zenith to combine **financial modeling, engineering est
 4. Government policy intelligence adjusts the analysis based on subsidy eligibility.
 5. AI-assisted rooftop analysis evaluates physical installation feasibility.
 6. The platform integrates these results into a comprehensive solar adoption assessment.
+7. Lumen Logic optimizes energy flow across multiple homes, enabling cost-efficient and intelligent energy distribution at a community level.
 
 ---
 
